@@ -6,6 +6,9 @@ php artisan vendor:publish --provider=Nima\Crud\CrudServiceProvider --tag=migrat
 
 php artisan migrate
 
+php artisan db:seed --class=Nima\Crud\Database\Seeders\PostSeed
+دستور بالا در دیتابیس چد سطر اطلاعات نمایشی و fake ایجاد میکد تا تست کردن را راحت تر کند
+
 پس از نصب لاراول بصورت خودکار فایل ها و کلاس ها را در محل مناسب قرار میهد
 
 برای نصب دستی پروژه
