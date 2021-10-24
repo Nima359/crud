@@ -17,12 +17,12 @@ class CreateCommentsTable extends Migration {
       $table->charset = "utf8";
       $table->collation = "utf8_persian_ci";
       
-      $table->increments ('id');
+      $table->id ('id');
       $table->string ('title')->nullable ();
       $table->longText ('comment');
       $table->string ('user_email');//->unique ();
-      $table->integer  ('post_id')->unsigned ();
-      $table->integer ('user_id')->unsigned ();
+      $table->bigInteger  ('post_id')->unsigned ();
+      $table->bigInteger ('user_id')->unsigned ();
       $table->tinyInteger ('publish');//->default (0);
       
       $table->timestamps ();
