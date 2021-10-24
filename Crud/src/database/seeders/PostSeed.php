@@ -15,16 +15,6 @@ class PostSeed extends Seeder {
    * @return void
    */
   public function run () {
-//    Post::factory (30)->create ();
-//
-//
-//    $this->call (Post::class);
-//    Model::reguard ();
-//
-//
-//    factory (Post::class , 30)->create ()->each (function ($p) {
-//      $p->comments ()->save (factory (Comments::class)->make ());
-//    });
     
 //    Post::truncate();
     
