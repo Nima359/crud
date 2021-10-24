@@ -21,8 +21,8 @@ class CreateCommentsTable extends Migration {
       $table->string ('title')->nullable ();
       $table->longText ('comment');
       $table->string ('user_email');//->unique ();
-      $table->bigInteger  ('post_id')->unsigned ();
-      $table->bigInteger ('user_id')->unsigned ();
+      $table->integer  ('post_id')->unsigned ();
+      $table->integer ('user_id')->unsigned ();
       $table->tinyInteger ('publish');//->default (0);
       
       $table->timestamps ();
